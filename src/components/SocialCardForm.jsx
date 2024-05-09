@@ -2,6 +2,10 @@ import React from "react";
 
 export default class SocialCardForm extends React.Component{
 
+
+
+	
+
 	render(){
 		return (
 			<section className="socialCardForm">

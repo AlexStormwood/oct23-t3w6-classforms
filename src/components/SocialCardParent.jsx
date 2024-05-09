@@ -1,15 +1,16 @@
 import React from "react";
 import SocialCardForm from "./SocialCardForm";
 import SocialCardDisplay from "./SocialCardDisplay";
+import { faker } from "@faker-js/faker";
 
 export default class SocialCardParent extends React.Component {
 	constructor(){
 		super();
 
 		this.state = {
-			currentlyEditing: true,
+			currentlyEditing: false,
 			content: "Default content",
-			imageUrl: ""
+			imageUrl: faker.image.urlPicsumPhotos()
 			
 		}
 	}
