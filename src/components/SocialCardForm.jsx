@@ -21,6 +21,7 @@ export default class SocialCardForm extends React.Component{
 					value={this.state.content} 
 					onChange={(event) => {this.setState({content: event.target.value})}}
 				/>
+				<button onClick={this.props.toggleEditMode}>Toggle Edit Mode</button>
 			</section>
 		)
 	}
